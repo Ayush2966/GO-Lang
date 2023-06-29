@@ -21,11 +21,14 @@ func PerformGetRequest(){
 	defer response.Body.Close()
 	fmt.Println("Status code:", response.StatusCode)
 	fmt.Println("Content length is ", response.ContentLength)
-	var responseString strings.Builder
 	content, _ := ioutil.ReadAll(response.Body)
+	fmt.Println(content)
+	fmt.Println(string(content))
+	
+	
+	var responseString strings.Builder
 	bytecount, _ := responseString.Write(content)
 	fmt.Println("Byecount is :", bytecount)
 	fmt.Println(responseString.String())
-	// fmt.Println(content)
-	// fmt.Println(string(content))
+	
 }

@@ -1,2 +1,3 @@
 # GO-Lang
-MY golang tutorial 
+My golang tutorial andd practice.
+

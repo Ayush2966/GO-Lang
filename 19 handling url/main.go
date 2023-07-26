@@ -9,7 +9,7 @@ const myurl string = "https://lco.dev:3000/learn?coursename=reactjs&paymentid=gh
 func main() {
 	fmt.Println("welcome to handling url in golang")
 	fmt.Println(myurl)
-	//parsing
+	//parsing-- extracting info 
 	result, _ := url.Parse(myurl)
 	// fmt.Println(result.Scheme)
 	// fmt.Println(result.Host)
